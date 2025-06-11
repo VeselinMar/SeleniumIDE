@@ -27,6 +27,7 @@ public class TC01IfUserIsInvalidTryAgainTest
         options.AddArguments("disable-dev-shm-usage");
         options.AddArguments("disable-gpu");
         options.AddArguments("window-size=1920x1080");
+        options.AddArgument("--remote-debugging-port=9222");
 
         driver = new ChromeDriver();
         js = (IJavaScriptExecutor)driver;
